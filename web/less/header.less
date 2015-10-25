@@ -1,0 +1,113 @@
+// header top
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+	width: 100%;
+	z-index: 1;
+	padding: 0 10px;
+}
+.header_top>* {
+	float: left;
+	padding: 15px 0;
+}
+.logo {
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 18px;
+	width: 200px;
+}
+.logo-text {
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+}
+.search {
+	&>input {
+		margin: 0 0 -7px;
+		width: 150px;
+	}
+	&>.btn {
+		margin: -1px 0 0 -5px;
+		height: 25px;
+		width: 43px;
+		padding: 3px 12px;
+		text-align: center;
+		transition: all 1s ease;
+		&:active {
+			outline: 0;
+			font-size: 1px;
+			transition: none;
+		}
+		&:focus {
+			outline: 0;
+		}
+	}
+}
+.action-bar {
+	float: right;
+	&> .btn {
+		margin: 10px 0;
+		&:last-child {
+			margin-right: 0
+		}
+	}
+
+}
+
+// categories-menu
+.categories-menu {
+	width: 100%;
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+	.has-children>.glyphicon {
+		position: absolute;
+		height: 13px;
+		width: 15px;
+		top: 16px;
+		right: 0px;
+		transform: rotate(0deg);
+		transition: all 1s ease;
+	}
+	.submenu {
+		display: none;
+		position: absolute;
+		left: 0;
+		top: 46px;
+		border-left: 1px solid #EEE;
+		border-right: 1px solid #EEE;
+		border-bottom: 1px solid #EEE;
+	}
+	 .category {
+		position: relative;
+		display: block;
+	}
+	&>ul>.category {
+		float: left;
+	}
+	a {
+		display: block;
+		color: rgb(85, 85, 85);
+		font-size: 18px;
+		background-color: #fff;
+		padding: 10px 22px;
+		&:hover {
+			background-color: #428BCA;
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+	.has-children:hover{
+		&>.glyphicon {
+			transform: rotate(90deg);
+		}
+		.submenu {
+			display: block;
+		}
+	}
+}

@@ -1,0 +1,14 @@
+{
+  "name": "front_builder",
+  "version": "0.0.1",
+  "private": true,
+  "devDependencies": {
+    "grunt": "*",
+    "load-grunt-tasks": "*",
+    "grunt-contrib-less": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-cssmin": "*",
+    "grunt-contrib-watch": "*"
+  }
+}

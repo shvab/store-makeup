@@ -1,0 +1,50 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+html,
+body {
+	height: 100%;
+	font-family: 'Droid Sans',Helvetica,Arial,Verdana,sans-serif;
+	min-width: 986px;
+}
+
+// header
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+	width: 100%;
+	z-index: 5;
+}
+header>div{
+	float: left;
+	position: relative;
+}
+.logo{
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 18px;
+	width: 200px;
+	margin: 15px 0;
+}
+.logo-text{
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.search>input{
+	margin: 14px 0 8px;
+	width: 150px;
+}
+.search>button{
+	margin: -1px 0 0 -5px;
+	height: 25px;
+	padding: 3px 12px;
+}
+.action-bar{
+	float: right;
+	padding: 10px 0;
+}
+.action-bar>.btn{
+	margin: 10px 0;
+}
