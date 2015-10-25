@@ -1,0 +1,55 @@
+{% extends "base.twig" %}
+
+{% block content %}
+  <div class="form-main">
+    
+	<h1>Join Logo</h1> {# TODO: change to real #}
+
+	<p class="lead">The best way to search and install software.</p>
+
+	<form action="/join" autocomplete="off" method="post">
+
+	  <h2 class="form-title">
+	    Create your personal account
+	  </h2>
+
+	  <dl>
+	  	<dt><label autocapitalize="off" autofocus="autofocus" for="user_first_name">First name</label></dt>
+	  	<dd><input autocapitalize="off" autofocus="autofocus" id="user_first_name" name="user[first_name]" size="30" type="text">
+	  		{# <p class="note">This will be your first name.</p> #}
+	  	</dd>
+	  </dl>
+
+	  <dl>
+	  	<dt><label autocapitalize="off" for="user_last_name">Last name</label></dt>
+	  	<dd><input autocapitalize="off" id="user_last_name" name="user[last_name]" size="30" type="text">
+	  		{# <p class="note">This will be your last name.</p> #}
+	  	</dd>
+	  </dl>
+
+	  <dl>
+	  	<dt><label autocapitalize="off" for="user_email">Email Address</label></dt>
+	  	<dd><input autocapitalize="off" id="user_email" name="user[email]" size="30" type="text">
+	  		<p class="note">You will use email address for sign in and occasionally receive account related emails.</p>
+	  	</dd>
+	  </dl>
+
+	  <dl>
+	  	<dt><label for="user_password">Password</label></dt>
+	  	<dd><input id="user_password" name="user[password]" size="30" type="password">
+	  		<p class="note">Use at least one lowercase letter, one numeral, and seven characters.</p>
+	  	</dd>
+	  </dl>  
+	  
+
+	    <p>By clicking on "Create an account" below, you are agreeing to the
+	    <a href="/terms" target="_blank">Terms of Service</a> and the
+	    <a href="/privacy" target="_blank">Privacy Policy</a>.</p>
+
+	  <div class="form-actions">
+	    <button type="submit" class="btn btn-primary">Create an account</button>
+	  </div>
+  
+	</form>
+  </div>
+{% endblock %}

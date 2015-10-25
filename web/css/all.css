@@ -120,6 +120,10 @@ header {
   padding: 155px 10px 56px;
   min-height: 100%;
 }
+.content-wrapper > .alert {
+  border-radius: 0;
+  margin: 0 -10px;
+}
 /* product */
 .products-wrapper {
   margin: 0 -5px;
@@ -240,6 +244,23 @@ footer > a > .author {
   color: #428BCA;
   font-weight: bold;
   color: white;
+}
+.form-main {
+  width: 450px;
+  margin: 0 auto;
+}
+.form-main input {
+  width: 100%;
+}
+.lead {
+  font-size: 21px;
+  color: #555;
+}
+.form-title {
+  font-size: 16px;
+}
+.note {
+  color: #777;
 }
 @media (min-width: 768px) {
   .action-bar > .btn {

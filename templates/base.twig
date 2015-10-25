@@ -27,15 +27,13 @@
 		</div>
 		<div class="action-bar">
 		 {% if logged %}
-
 			<a class="btn btn-primary" href="#">My products</a>
 			<a class="btn btn-warning" href="#">Reports</a>
 			<a class="btn btn-info" href="#">Settings</a>
-			<a class="btn btn-default" href="#">Logout</a>
-	
+			<a class="btn btn-default" href="#">Sign out</a>
 		 {% else %}
-		 	<a class="btn btn-info" href="http://store.loc/index.php?r=site%2Fregistration">Registration</a>
-			<a class="btn btn-default" href="http://store.loc/index.php?r=site%2Flogin">Login</a>
+		 	<a class="btn btn-info" href="http://store.loc/index.php?r=site%2Fregistration">Sign up</a>
+			<a class="btn btn-default" href="http://store.loc/index.php?r=site%2Flogin">Sign in</a>
 		 {% endif %}
 		</div>
 	</div>
@@ -68,6 +66,14 @@
 </header>
 
 <div class="content-wrapper">
+
+{# <div class="alert alert-danger" role="alert">
+	<div class="container">
+	    Can't find that email, sorry.
+	    <a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">×</a>
+    </div>
+</div> #}
+
 {% block content %}{% endblock %}
 </div>
 <footer>
